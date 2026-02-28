@@ -1,0 +1,300 @@
+<!DOCTYPE html>
+<html lang="mr">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>नॅचरल दूध – संपर्क साधा</title>
+    <meta name="description"
+        content="नॅचरल दूध – आमच्याशी संपर्क साधा. तुमचे प्रश्न आणि अभिप्राय आमच्यासाठी महत्त्वाचे आहेत." />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap"
+        rel="stylesheet" />
+    <link rel="stylesheet" href="styles.css" />
+
+    <!-- Cloudflare Web Analytics -->
+    <script defer src='https://static.cloudflareinsights.com/beacon.min.js'
+        data-cf-beacon='{"token": "YOUR_ANALYTICS_TOKEN_HERE"}'></script>
+    <!-- End Cloudflare Web Analytics -->
+
+    <!-- Cloudflare Turnstile -->
+    <script src="https://challenges.cloudflare.com/turnstile/v0/api.js" async defer></script>
+</head>
+
+<body class="page-inquiry">
+
+    <!-- ═══════════════════════════ HEADER ═══════════════════════════ -->
+    <header class="header" id="header">
+        <div class="container header-inner">
+            <!-- Logo -->
+            <a href="index.html" class="logo-wordmark" aria-label="Natural Milk Home">Natural</a>
+
+            <!-- Nav -->
+            <nav class="nav" aria-label="Primary navigation">
+                <a href="index.html" class="nav-link" id="nav-home">Home</a>
+                <a href="careers.html" class="nav-link" id="nav-careers">Careers</a>
+                <a href="inquiry.html" class="nav-link active" id="nav-contact">Contact</a>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <!-- ═══════════════════════════ PAGE HERO ═══════════════════════════ -->
+        <section class="page-hero">
+            <div class="container text-center">
+                <p class="hero-eyebrow">आम्ही मदतीसाठी येथे आहोत</p>
+                <h1 class="hero-headline">संपर्क <span class="hero-headline-accent">साधा.</span></h1>
+                <p class="hero-sub ml-auto mr-auto">तुमचे प्रश्न, अभिप्राय किंवा सूचना पाठवा.</p>
+            </div>
+            <div class="hero-wave mt-40" aria-hidden="true">
+                <svg viewBox="0 0 1440 60" preserveAspectRatio="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M0,30 C360,60 1080,0 1440,30 L1440,60 L0,60 Z" fill="#f6faf7" />
+                </svg>
+            </div>
+        </section>
+
+        <!-- ═══════════════════════════ CONTACT MODULE ═══════════════════════════ -->
+        <section class="contact-section">
+            <div class="container contact-grid">
+
+                <!-- Contact Form Left Column -->
+                <div class="contact-form-card">
+                    <form class="inquiry-form" id="google-form" method="POST">
+                        <div class="form-row">
+                            <div class="form-group">
+                                <label for="name">पूर्ण नाव</label>
+                                <input type="text" id="name" name="name" placeholder="उदा. रमेश जाधव" required />
+                            </div>
+                            <div class="form-group">
+                                <label for="phone">फोन नंबर</label>
+                                <input type="tel" id="phone" name="phone" placeholder="+९१" required />
+                            </div>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="email">ई-मेल (ऐच्छिक)</label>
+                            <input type="email" id="email" name="email" placeholder="ramesh@example.com" />
+                        </div>
+
+                        <div class="form-group">
+                            <label for="subject">विषय</label>
+                            <select id="subject" name="subject" required>
+                                <option value="" disabled selected>विषय निवडा...</option>
+                                <option value="product_inquiry">उत्पादनाची चौकशी</option>
+                                <option value="delivery_issue">वितरण समस्या</option>
+                                <option value="feedback">अभिप्राय / सूचना</option>
+                                <option value="other">इतर</option>
+                            </select>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="message">तुमचा संदेश</label>
+                            <textarea id="message" name="message" rows="4" placeholder="तुमचा मेसेज येथे लिहा..."
+                                required></textarea>
+                        </div>
+
+                        <!-- Cloudflare Turnstile Widget -->
+                        <div class="form-group" style="align-items: flex-start; margin-top: 5px;">
+                            <div class="cf-turnstile" data-sitekey="YOUR_TURNSTILE_SITEKEY_HERE"></div>
+                        </div>
+
+                        <button type="submit" class="btn-primary w-full" id="submit-btn" style="position: relative;">
+                            <span id="btn-text">संदेश पाठवा</span>
+                        </button>
+                        <p id="form-status"
+                            style="margin-top: 15px; font-weight: 500; text-align: center; display: none;"></p>
+                    </form>
+                </div>
+
+                <!-- Contact Info Right Column -->
+                <div class="contact-info-card">
+                    <h2 class="form-title">आमच्याशी संपर्क साधा</h2>
+                    <p class="form-desc">खालील तपशील वापरून आमच्याशी थेट संपर्क साधा किंवा फॉर्म भरा.</p>
+
+                    <div class="contact-detail-list">
+                        <div class="detail-item">
+                            <div class="detail-icon">📍</div>
+                            <div>
+                                <h4>आमचा पत्ता</h4>
+                                <p>G6PV+89P, साईनगर रांजणी, तालुका कळंब, जिल्हा धाराशिव (उस्मानाबाद), महाराष्ट्र ४१३५२८
+                                </p>
+                            </div>
+                        </div>
+
+                        <div class="detail-item">
+                            <div class="detail-icon">📞</div>
+                            <div>
+                                <h4>फोन नंबर</h4>
+                                <p><a href="tel:02473265503">०२४७३ २६५ ५०३</a></p>
+                            </div>
+                        </div>
+
+                        <div class="detail-item">
+                            <div class="detail-icon">✉️</div>
+                            <div>
+                                <h4>ई-मेल</h4>
+                                <p><a href="mailto:info@naturaldoodh.com">info@naturaldoodh.com</a></p>
+                            </div>
+                        </div>
+
+                        <div class="detail-item">
+                            <div class="detail-icon">⏰</div>
+                            <div>
+                                <h4>कामाचे तास</h4>
+                                <p>सोमवार - शनिवार: सकाळी ८:०० ते संध्याकाळी ६:००</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+    </main>
+
+    <!-- Google Apps Script JS Handler -->
+    <script>
+        const scriptURL = 'https://script.google.com/macros/s/AKfycbyHrN3PWCglVi45H_-uue7WCAhcQy-c2DQ09sum3Iv7cCqHWVMHwk7e71AqXjZusBUC2g/exec';
+        const form = document.getElementById('google-form');
+        const btnText = document.getElementById('btn-text');
+        const submitBtn = document.getElementById('submit-btn');
+        const formStatus = document.getElementById('form-status');
+
+        form.addEventListener('submit', e => {
+            e.preventDefault();
+
+            // Show loading state
+            btnText.innerText = 'पाठवत आहे...';
+            submitBtn.disabled = true;
+            submitBtn.style.opacity = '0.7';
+
+            // Ensure data is sent correctly so Apps Script reads e.parameter
+            const data = new URLSearchParams();
+            for (const pair of new FormData(form)) {
+                data.append(pair[0], pair[1]);
+            }
+
+            fetch(scriptURL, {
+                method: 'POST',
+                body: data
+            })
+                .then(response => {
+                    // With no-cors, response is opaque, we just assume success if it didn't throw network error
+                    formStatus.innerText = '✅ तुमचा संदेश यशस्वीरीत्या पाठवला आहे!';
+                    formStatus.style.color = 'var(--green)';
+                    formStatus.style.display = 'block';
+                    form.reset();
+                })
+                .catch(error => {
+                    formStatus.innerText = '❌ काहीतरी तांत्रिक अडचण आली. कृपया पुन्हा प्रयत्न करा.';
+                    formStatus.style.color = 'red';
+                    formStatus.style.display = 'block';
+                    console.error('Error!', error.message);
+                })
+                .finally(() => {
+                    // Reset button state
+                    btnText.innerText = 'संदेश पाठवा';
+                    submitBtn.disabled = false;
+                    submitBtn.style.opacity = '1';
+
+                    // Hide success message after 5 seconds
+                    setTimeout(() => {
+                        formStatus.style.display = 'none';
+                    }, 5000);
+                });
+        });
+    </script>
+
+    <!-- ═══════════════════════════ FEATURED IN ═══════════════════════════ -->
+    <section class="featured-in">
+        <div class="container text-center">
+            <h2 class="section-title text-center" style="margin-bottom: 40px; font-size: 2rem;">Featured <span
+                    class="hero-headline-accent">In</span></h2>
+        </div>
+        <div class="marquee-wrapper">
+            <div class="marquee-group">
+                <img src="assets/lokmat.jpg" alt="Lokmat" class="featured-logo" />
+                <img src="assets/abp_maza.jpg" alt="ABP Maza" class="featured-logo" />
+                <img src="assets/rotaryculb_kalamb.jpg" alt="Rotary Club Kalamb" class="featured-logo" />
+                <img src="assets/agrowon.jpg" alt="Agrowon" class="featured-logo" />
+                <img src="assets/marathi.jpg" alt="Marathi" class="featured-logo" />
+                <img src="assets/samtv.jpg" alt="Saam TV" class="featured-logo" />
+                <img src="assets/vivek.jpg" alt="Vivek" class="featured-logo" />
+                <img src="assets/rswl.jpg" alt="RSWL" class="featured-logo" />
+                <img src="assets/chinimandi2.jpg" alt="Chinimandi" class="featured-logo" />
+            </div>
+            <div class="marquee-group" aria-hidden="true">
+                <img src="assets/lokmat.jpg" alt="Lokmat" class="featured-logo" />
+                <img src="assets/abp_maza.jpg" alt="ABP Maza" class="featured-logo" />
+                <img src="assets/rotaryculb_kalamb.jpg" alt="Rotary Club Kalamb" class="featured-logo" />
+                <img src="assets/agrowon.jpg" alt="Agrowon" class="featured-logo" />
+                <img src="assets/marathi.jpg" alt="Marathi" class="featured-logo" />
+                <img src="assets/samtv.jpg" alt="Saam TV" class="featured-logo" />
+                <img src="assets/vivek.jpg" alt="Vivek" class="featured-logo" />
+                <img src="assets/rswl.jpg" alt="RSWL" class="featured-logo" />
+                <img src="assets/chinimandi2.jpg" alt="Chinimandi" class="featured-logo" />
+            </div>
+        </div>
+    </section>
+
+    <!-- ═══════════════════════════ FOOTER ═══════════════════════════ -->
+    <footer class="footer" id="contact-footer">
+        <div class="container footer-inner">
+
+            <div class="footer-brand">
+                <a href="index.html" class="logo-wordmark footer-wordmark">Natural</a>
+                <p class="footer-tagline">ताजे, सकस आणि नैसर्गिक.<br />प्रत्येक थेंबात विश्वास.</p>
+            </div>
+
+            <div class="footer-col">
+                <h4 class="footer-heading">Quick Links</h4>
+                <ul class="footer-links">
+                    <li><a href="index.html" id="footer-home">Home</a></li>
+                    <li><a href="journey.html" id="footer-about">About / Journey</a></li>
+                    <li><a href="careers.html" id="footer-careers">Careers</a></li>
+                    <li><a href="inquiry.html" id="footer-contact">Contact Us</a></li>
+                </ul>
+            </div>
+
+            <div class="footer-col">
+                <h4 class="footer-heading">आमच्याशी जोडून राहा</h4>
+                <ul class="footer-links">
+                    <li><a href="https://www.facebook.com/NaturalDairyProduct/" target="_blank" rel="noopener"
+                            id="footer-facebook">Facebook</a></li>
+                    <li><a href="https://www.linkedin.com/company/natural-sugar-and-allied-industries-ltd-ranjani/?originalSubdomain=in"
+                            target="_blank" rel="noopener" id="footer-linkedin">LinkedIn</a></li>
+                </ul>
+            </div>
+
+            <div class="footer-col">
+                <h4 class="footer-heading">Contact Us</h4>
+                <ul class="footer-contact-list">
+                    <li>
+                        <span class="contact-icon">📞</span>
+                        <a href="tel:02473265503" id="footer-phone">०२४७३ २६५ ५०३</a>
+                    </li>
+                    <li>
+                        <span class="contact-icon">✉️</span>
+                        <a href="mailto:info@naturaldoodh.com" id="footer-email">info@naturaldoodh.com</a>
+                    </li>
+                    <li>
+                        <span class="contact-icon">📍</span>
+                        <span>साईनगर रांजणी, ता. कळंब, जि. धाराशिव (उस्मानाबाद), महाराष्ट्र ४१३५२८</span>
+                    </li>
+                </ul>
+            </div>
+
+        </div>
+
+        <div class="footer-bottom">
+            <div class="container">
+                <p>&copy; 2026 नॅचरल दूध. सर्व हक्क राखीव.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Milk Drop Animation Script -->
+    <script src="script.js"></script>
+</body>
+
+</html>
